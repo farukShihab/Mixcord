@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login-desktop.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,700;1,800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login-desktop">
+      <div class="hero-content1">
+        <div class="hero2">
+          <div class="logo1">
+            <div class="mixcord-group">
+              <i class="mixcord8">MIXCORD</i>
+              <img class="vector-icon2" alt="" src="./public/vector1.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="actions1">
+          <div class="login" data-animate-on-scroll>Login</div>
+          <input
+            class="e-mail-field1"
+            name="Email Field"
+            id="email"
+            placeholder="E-mail"
+            type="email"
+          />
+
+          <input
+            class="password-field1"
+            name="textfield"
+            id="password"
+            placeholder="Password"
+            type="password"
+            data-animate-on-scroll
+          />
+
+          <button class="login-button" id="loginButton">
+            <b class="label2">Login</b>
+          </button>
+          <a class="dont-have-an-container" id="getStarted">
+            <span>
+              <i>Don’t have an account?</i>
+              <span> </span>
+              <span class="get-started">Get started...</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <button class="back-button3" id="backbutton">
+        <div class="back-button4">
+          <button class="back-button5" id="backButton">
+            <div class="border1"></div>
+            <img class="arrow-icon1" alt="" src="./public/arrow.svg" />
+          </button>
+        </div>
+      </button>
+    </div>
+
+    <script>
+      var dontHaveAn = document.getElementById("getStarted");
+      if (dontHaveAn) {
+        dontHaveAn.addEventListener("click", function (e) {
+          window.location.href = "./signup-desktop.html";
+        });
+      }
+      
+      var backButton = document.getElementById("backbutton");
+      if (backButton) {
+        backButton.addEventListener("click", function (e) {
+          window.location.href = "./landing-page-desktop.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

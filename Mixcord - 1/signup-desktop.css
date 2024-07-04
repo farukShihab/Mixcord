@@ -1,0 +1,200 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logo-child,
+.mixcord7 {
+  align-self: stretch;
+  position: relative;
+}
+.logo-child {
+  max-width: 100%;
+  overflow: hidden;
+  height: 168px;
+  flex-shrink: 0;
+}
+.mixcord7 {
+  font-weight: 800;
+  background: linear-gradient(97.19deg, #ffb800 29.47%, #faff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero1,
+.logo,
+.signup {
+  align-self: stretch;
+}
+.hero1 {
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signup {
+  flex: 1;
+  position: relative;
+}
+.e-mail-field,
+.label1,
+.password-field,
+.username-field {
+  flex: 1;
+  font-size: var(--font-size-base);
+  font-family: var(--small-interdesktop);
+}
+.e-mail-field,
+.password-field,
+.username-field {
+  border: 2px solid var(--color-gray-200);
+  outline: 0;
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-sm);
+  color: var(--color-white);
+  opacity: 0;
+}
+.e-mail-field.animate {
+  animation: 0.2s ease-in-out 0.5s 1 normal forwards fade-in;
+}
+.username-field.animate {
+  animation: 0.2s ease-in-out 0.7s 1 normal forwards fade-in;
+}
+.password-field.animate {
+  animation: 0.2s ease-in-out 0.9s 1 normal forwards fade-in;
+}
+.label1 {
+  position: relative;
+  line-height: 24px;
+  color: var(--color-black);
+  text-align: center;
+}
+.already-have-an-container,
+.signup-button {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.signup-button {
+  border: 0;
+  padding: var(--padding-5xs);
+  background-color: var(--yellow);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.already-have-an-container {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  color: var(--links-blue);
+}
+.actions,
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.actions {
+  align-self: stretch;
+  gap: var(--gap-13xl);
+  font-size: var(--h5-interdesktop-size);
+}
+.hero-content {
+  width: 384px;
+  gap: 25px;
+  z-index: 0;
+}
+.border {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--gray);
+  border: 2px solid var(--color-dimgray);
+  z-index: 0;
+}
+.arrow-icon {
+  width: 30px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 0.5px);
+  left: calc(50% - 14.5px);
+  max-height: 100%;
+  z-index: 1;
+}
+.back-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 71px;
+  height: 71px;
+  position: relative;
+  gap: var(--gap-5xs);
+}
+.back-button1,
+.back-button2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.back-button,
+.signup-desktop {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.back-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs);
+  background-color: transparent;
+  margin: 0 !important;
+  position: absolute;
+  top: 128px;
+  left: 0px;
+  height: 87px;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.signup-desktop {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 1024px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-109xl) var(--padding-43xl);
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--font-size-18xl-9);
+  color: var(--color-white);
+  font-family: var(--small-interdesktop);
+}

@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --small-interdesktop: Inter;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-18xl-9: 37.9px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-31xl-5: 50.5px;
+  --small-interdesktop-size: 12px;
+  --h5-interdesktop-size: 28.4px;
+
+  /* Colors */
+  --gray: #262626;
+  --color-gray-100: #1c1c1c;
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-gray-300: rgba(0, 0, 0, 0.7);
+  --color-gray-400: rgba(38, 38, 38, 0.6);
+  --color-black: #000;
+  --color-white: #fff;
+  --color-darkslategray: #353535;
+  --yellow: #faff00;
+  --color-dimgray: #636363;
+  --links-blue: #0085ff;
+
+  /* Gaps */
+  --gap-21xl: 40px;
+  --gap-13xl: 32px;
+  --gap-base: 16px;
+  --gap-5xs: 8px;
+  --gap-5xl: 24px;
+  --gap-33xl: 52px;
+
+  /* Paddings */
+  --padding-45xl: 64px;
+  --padding-5xs: 8px;
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-109xl: 128px;
+  --padding-43xl: 62px;
+  --padding-2xs: 11px;
+  --padding-sm: 14px;
+
+  /* Border radiuses */
+  --br-base: 16px;
+  --br-18xl: 37px;
+  --br-5xl: 24px;
+  --br-493xl: 512px;
+  --br-5xs: 8px;
+}
